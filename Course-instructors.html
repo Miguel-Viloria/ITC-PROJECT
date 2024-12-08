@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Description</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navigation {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .tags {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .tag {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .tag:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        .button {
+            display: block;
+            text-align: center;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 16px;
+            color: black;
+            background-color: lightgray;
+            border: 2px solid darkred;
+            border-radius: 5px;
+            cursor: pointer;
+            box-sizing: border-box;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: darkred;
+            color: white;
+        }
+
+        .paragraph {
+            display: none;
+            width: 100%;
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 10px;
+            border: 2px solid darkred;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 10px;
+        }
+
+        .paragraph.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="tags">
+            <img src="Coecsa.png" class="logo" alt="Logo 1">
+            <a href="About Us.html" class="tag">About Us</a>
+            <a href="Coursedescription.html" class="tag">Course Description</a>
+            <a href="Coursesubject.html" class="tag">Course Subject</a>
+            <a href="Community.html" class="tag">Community</a>
+            <img src="Lpu.png" class="logo" alt="Logo 2">
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">Course Instructors</h1><br>
+    <center><h3>Meet Your Professors!</h3></center>
+
+    <div class="content-container">
+        <div class="buttons-container">
+            <div class="button-group">
+                <button class="button" onclick="toggleDescription('desc1')">Dr. Amanda Jane C. Menta</button>
+                <div id="desc1" class="paragraph">
+                    <p><img src="be9ae65f-025d-4c0c-b16a-d95ff935b62a.jpg" width="20%" height="20%"><br><br>
+                    <b>The Basics</b><br><br>
+                    Amanda Jane C. Menta is an Instructor at Lyceum of the Philippines University Cavite Campus. She received her Master in Information Technology from the Technological University of the Philippines in 2016 and finished her Ph.D. in Technology Management at the same University in 2023. She has been working for academe for almost 7 years and also working as a consultant in some industry-based businesses in Technology and Security firms in the Philippines. <br><br>
+                    <b>Education</b><br>
+                    Doctor of Philosophy in Technology Management
+                    Technological University of the Philippines -2023<br>
+                    Master of Information Technology
+                    Technological University of the Philippines - 2016<br>
+                    Bachelor of Science in Information Technology
+                    Lyceum of the Philippines University - Cavite Campus-  2012<br><br>
+                    <b>Contact Me</b><br><br>
+                    <img src="3b76df89-2370-461c-9891-1867f5af93d8.jpg" width="30%" height="20%">
+                    </p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="button" onclick="toggleDescription('desc2')">Ms. Alyssa Paola Pocaan (CSS)</button>
+                <div id="desc2" class="paragraph">
+                    <p><img src="23e6494c-3b4f-415b-8659-172845dfb69f.jpg" width="20%" height="20%"><br>About Ms Alyssa Paola Pocaan<br><br>
+                    <b>Program Chair in Information Technology at Lyceum of the Philippines University Cavite</b><br>
+                    Ms. Pocaan holds a leadership role in the Information Technology program at LPU Cavite. As the Program Chair, she oversees the program’s curriculum, ensuring that students receive high-quality education that prepares them for careers in IT. She also works closely with faculty members and administration to maintain academic standards, manage schedules, and introduce improvements to the program.<br><br>
+                    <b>Council Adviser for SATA(LPU Student Association for Technological Advancement)</b><br>As a council adviser for SATA, Ms. Pocaan serves as a mentor and guide for students who are part of this organization. SATA focuses on promoting technological innovation and advancing students’ skills in technology. Her role includes providing support, offering advice on projects and events, and ensuring that the association aligns with the university’s goals.<br><br>
+                    <b>Instructor for Capstone Project 2 and Computer Programming 1 and 2</b><br> Ms. Pocaan teaches both foundational and advanced subjects in the field of computer science. She handles:
+                    <ul>
+                        <li><i>Capstone Project 2:</i> This involves guiding students in developing and completing real-world IT projects,<br> helping them apply what they’ve learned in class to solve practical problems.</li>
+                        <li><i>Computer Programming 1 and 2:</i> In these courses, she teaches students the fundamentals and intermediate-level programming concepts, including how to write, debug, and maintain code.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            const desc = document.getElementById(id);
+            desc.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
