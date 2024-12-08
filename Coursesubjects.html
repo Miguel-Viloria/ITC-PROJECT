@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Description</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navigation {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .tags {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .tag {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .tag:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .button-group {
+            flex: 1;
+            text-align: center;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            display: block;
+            text-align: center;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 16px;
+            color: black;
+            background-color: lightgray;
+            border: 2px solid darkred;
+            border-radius: 5px;
+            cursor: pointer;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        label:hover {
+            background-color: darkred;
+            color: white;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: darkred;
+            color: white;
+        }
+
+        .paragraph {
+            display: none;
+            width: 100%;
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 10px;
+            border: 2px solid darkred;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="radio"]:checked + label + .paragraph {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="tags">
+            <img src="Coecsa.png" class="logo" alt="Logo 1">
+            <a href="About Us.html" class="tag">About Us</a>
+            <a href="Coursedescription.html" class="tag">Course Description</a>
+            <a href="Coursesubject.html" class="tag">Course Subject</a>
+            <a href="Community.html" class="tag">Community</a>
+            <img src="Lpu.png" class="logo" alt="Logo 2">
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">Course Subjects</h1>
+
+    <div class="content-container">
+      
+        <div class="buttons-container">
+            <div class="button-group">
+                <input type="radio" id="radio1" name="option">
+                <label for="radio1">HyperText Markup Language<br>(HTML)</label>
+                <div class="paragraph">
+                    <p>HTML or Hypertext Markup Language is the backbone of every webpage, providing the structure and layout of content. 
+                    In the <b>Introduction to Computing</b> course, students learn how to use HTML to organize text, images, links, and other 
+                    multimedia elements on a page. By mastering tags and attributes, students gain the skills to create clear, well-structured 
+                    content that forms the foundation of any website.</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="radio" id="radio2" name="option">
+                <label for="radio2">Cascading Style Sheets<br>(CSS)</label>
+                <div class="paragraph">
+                    <p>CSS or Cascading Style Sheets allows students to style and enhance their HTML content, transforming basic web pages into 
+                    visually appealing designs. In this course, students learn how to use CSS to control layout, color, fonts, and spacing, creating 
+                    a polished look that aligns with modern design principles. With CSS, students can customize the visual identity of a webpage, making 
+                    it more engaging and user-friendly.</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="radio" id="radio3" name="option">
+                <label for="radio3">JavaScript</label>
+                <div class="paragraph">
+                    <p>JavaScript brings interactivity and dynamic functionality to websites, enabling students to make their webpages more responsive 
+                    and engaging. In the <b>Introduction to Computing</b> course, students explore how JavaScript can be used to create interactive elements 
+                    like buttons, forms, and animations. By learning basic JavaScript programming, students acquire the tools to make their websites more 
+                    interactive, adding functionality that enhances the user experience.</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="radio" id="radio4" name="option">
+                <label for="radio4">Introduction to Computing</label>
+                <div class="paragraph">
+                    <p>The foundational ideas of computers and information technology are introduced in this course. Students will obtain essential computing 
+                    skills and an awareness of how technology affects all facets of life through theoretical talks, practical laboratory exercises, and the 
+                    application of software tools. Learners will also gain technical skills in creating websites using basic HTML, CSS and JavaScript.</p>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="radio" id="radio5" name="option">
+                <label for="radio5">Computer Programming</label>
+                <div class="paragraph">
+                    <p>The course covers the use of general-purpose programming language to solve problems. The emphasis is to train students to design, 
+                    implement, test, and debug programs intended to solve computing problems using fundamental programming constructs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
