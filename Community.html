@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            }
+
+        .navigation {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .tags {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 1000;
+            margin: 0 auto;
+        }
+
+        .tag {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .tag:hover {text-decoration: underline}
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-around; /*before: space-between*/
+            align-items: normal; /*before: stretch*/
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;  
+        }
+
+        .box {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s; /*transition timer :))*/
+            transition-timing-function: ease-out;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+        }
+
+        .box h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .box p {
+            color: #800000;
+            font-size: 1em;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .box ul {
+            color: #666;
+            text-align: left
+        }
+
+        .box ol {
+            color: #666;
+            text-align: left
+        }
+		
+		footer {
+            margin-top: 20px;
+            text-align: center;
+            color:#800000;
+            font-size: 18px;
+        
+    </style>
+</head>
+
+<body background="LPUBANNER.gif">
+    <div class="navigation">
+        <div class="tags">
+            <img src="Coecsa.png" class="logo">
+            <a href="About Us.html" class="tag">About Us</a>
+            <a href="Coursedescription.html" class="tag">Course Description</a>
+            <a href="Coursesubject.html" class="tag">Course Subject</a>
+            <a href="Community.html" class="tag">Community</a>
+            <img src="Lpu.png" class="logo">
+        </div>
+    </div>
+
+	<br>
+
+    <div class="container">
+        <div class="box">
+	<a href="Forum_news.html"><img src="news-removebg-preview.png" width="90%" height="90%"></a>
+            <h2><u>FORUM NEWS</u></h2>
+            <p><b>
+               Learn about the latest news in LPU here.
+            </b></p>
+        </div>
+        <div class="box">
+	<a href="Course-instructors.html"><img src="instructors-removebg-preview.png" width="90%" height="90%"></a>
+           <h2><u>COURSE INSTRUCTORS</u></h2>
+            <p><b>
+               Learn more about the faculty and their credentials.
+            </b></p>
+        </div>
+    </div>
+<footer> <Strong>
+        © 2024 Lyceum of the Phillipines Cavite. All rights reserved.
+    </footer> </strong>
+</body>
+</html>
